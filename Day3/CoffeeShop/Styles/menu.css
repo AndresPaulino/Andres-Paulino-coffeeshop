@@ -1,0 +1,82 @@
+:root {
+  --nitro-blue: #5bacc3;
+  --nitro-pink: #fff0ed;
+  --graphite: #393939;
+  --light-gray: #f7f7f7;
+  --white: #fff;
+  --black: #000;
+}
+
+.hero {
+  background-image: url('/CoffeeShop/Assets/Images/coffee-circle.jpg');
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 35.93rem;
+  max-height: 37.5rem;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.title-box {
+  min-width: 17.5rem;
+  max-width: 18.75rem;
+  min-height: 11.25rem;
+  max-height: 12.5rem;
+  background-color: var(--graphite);
+  text-align: center;
+  color: var(--white);
+  margin-top: 0;
+}
+
+.menu-links {
+  margin: 0;
+}
+
+.menu-links a {
+  color: var(--white);
+  display: inline-block;
+  border-left: 4px solid var(--nitro-blue);
+  text-decoration: none;
+  padding: 5px 1.25rem;
+}
+
+.nav-menu {
+  background-color: var(--graphite);
+  text-align: center;
+  list-style-type: none;
+  padding: 1.25rem 0;
+}
+
+.menu-links li {
+  display: inline;
+  padding: 1.25rem 0;
+  margin: 1.25rem 0;
+}
+
+.menu-items {
+  text-align: center;
+}
+
+.menu-items .description {
+  padding: 0 31.25rem;
+  font-style: italic;
+}
+
+.hot-drinks {
+  background-color: var(--nitro-pink);
+  padding: 1.25rem;
+}
+
+.cold-drinks {
+  background-color: var(--light-gray);
+  padding: 1.25rem;
+}
+
+.pastries {
+  background-color: var(--nitro-pink);
+  padding: 1.25rem;
+}
+
+

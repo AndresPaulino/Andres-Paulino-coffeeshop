@@ -1,0 +1,82 @@
+:root {
+  --nitro-blue: #5bacc3;
+  --nitro-pink: #fff0ed;
+  --graphite: #393939;
+  --light-gray: #f7f7f7;
+  --white: #fff;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  color: var(--graphite);
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-size: 3.75rem;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  margin: 0;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+button {
+  min-width: 11.25rem;
+  max-width: 80%;
+  padding: 1.25rem;
+  margin: 1.25rem;
+  background-color: var(--nitro-blue);
+  color: white;
+}
+
+.main-logo {
+  min-width: 3.125rem;
+  max-width: 7.5rem;
+  margin-left: 1.25rem;
+}
+
+.main-nav {
+  background-color: var(--nitro-pink);
+  display: flex;
+  align-items: center;
+  height: 7rem;
+}
+
+.nav-links {
+  padding-bottom: 0;
+}
+
+
+.nav-links, .nav-links a, .nav-links li {
+  font-size: 1.31rem;
+  font-weight: 400;
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  margin: 1.25rem .75rem;
+  padding: 0;
+}
+
+.nav-links {
+  margin-bottom: 0;
+}
+
+li .shop {
+  color: var(--nitro-blue);
+}
+
+.title a {
+  text-decoration: none;
+  color: black;
+}
+
+.price {
+  color: var(--nitro-blue);
+}
