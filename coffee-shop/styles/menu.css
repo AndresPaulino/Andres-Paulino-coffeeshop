@@ -1,14 +1,7 @@
-:root {
-  --nitro-blue: #5bacc3;
-  --nitro-pink: #fff0ed;
-  --graphite: #393939;
-  --light-gray: #f7f7f7;
-  --white: #fff;
-  --black: #000;
-}
+@import url(./global.css);
 
 .hero {
-  background-image: url('/CoffeeShop/Assets/Images/coffee-circle.jpg');
+  background-image: url('../assets/images/coffee-circle.jpg');
   min-width: 100%;
   max-width: 100%;
   min-height: 35.93rem;

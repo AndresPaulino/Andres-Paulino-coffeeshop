@@ -4,6 +4,7 @@
   --graphite: #393939;
   --light-gray: #f7f7f7;
   --white: #fff;
+  --black: #000;
 }
 
 body {
@@ -21,9 +22,16 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-size: 2.0625rem;
+  font-weight: 300;
+  margin: 0 0 1rem 0;
+}
+
 p {
   font-size: 1.125rem;
   font-weight: 400;
+  margin: 0;
 }
 
 button {
@@ -34,6 +42,7 @@ button {
   font-size: 1.3125rem;
   background-color: var(--nitro-blue);
   color: white;
+  border: none;
 }
 
 .main-logo {
@@ -56,7 +65,7 @@ button {
   list-style-type: none;
   text-decoration: none;
   display: inline-block;
-  color: black;
+  color: var(--black);
   margin: 1.25rem .75rem;
   padding: 0;
 }
@@ -71,7 +80,7 @@ li .shop {
 
 .title a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 .price {

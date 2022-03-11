@@ -1,22 +1,14 @@
-:root {
-  --nitro-blue: #5bacc3;
-  --nitro-pink: #fff0ed;
-  --graphite: #393939;
-  --light-gray: #f7f7f7;
-  --white: #fff;
-  --black: #000;
-}
+@import url(./global.css);
 
 /* Hero */
 
 section.hero {
   background-color: var(--nitro-pink);
   display: flex;
-  padding: 1.25rem 0;
+  padding: 1.25rem 10%;
   box-sizing: border-box;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10%;
 }
 
 .hero-text {
@@ -39,6 +31,8 @@ section.hero {
   margin: 0;
 }
 
+
+
 .product-title {
   text-align: center;
   padding: 2.5rem;
@@ -60,11 +54,22 @@ section.hero {
   margin: 1.25rem;
   border-radius: 10px;
   box-shadow: 0 5px 9px -1px rgba(0,0,0,0.25);
+  background-color: white;
+}
+
+.card-title {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+p.price {
+  font-size: 2.25rem;
 }
 
 .btn-view {
   text-align: center;
-  margin: 2.5rem 0
+  margin: 2.5rem 0;
+  padding-bottom: 2rem;
 }
 
 /* Discount */
@@ -89,7 +94,16 @@ section.hero {
 /* Footer */
 
 footer {
+  width: 100%;
   background-color: var(--nitro-pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address, .hours, .social {
+  padding: 2.5rem;
+  margin-left: 4rem;
 }
 
 .icon {
