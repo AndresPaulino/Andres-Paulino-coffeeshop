@@ -7,25 +7,86 @@
   --black: #000;
 }
 
-nav {
+/* Hero */
+
+section.hero {
   background-color: var(--nitro-pink);
+  display: flex;
+  padding: 1.25rem 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
 }
 
-.nav-heading a {
-  font-size: 2rem;
-  font-weight: 300;
-  text-decoration: none;
-  color: var(--graphite);
+.hero-text {
+  width: 30%;
 }
 
-.hero {
-  background-color: var(--nitro-pink);
+.btn-shop {
+  margin-left: 0;
 }
 
 .product-img {
   min-height: 15rem;
   max-height: 34.37rem;
 }
+
+/* Product Cards */
+
+.products {
+  background-color: var(--light-gray);
+  margin: 0;
+}
+
+.product-title {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.product-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.coffee-beans, .cold-brew, .in-house-brew  {
+  min-width: 20.625rem;
+  max-width: 15.625rem;
+  min-height: 27.5rem;
+  max-height: 28.75rem;
+  padding: 1.25rem;
+  margin: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0,0,0,0.25);
+}
+
+.btn-view {
+  text-align: center;
+  margin: 2.5rem 0
+}
+
+/* Discount */
+
+.discount-text {
+  text-align: center;
+  font-size: 2.81rem;
+  font-weight: 400;
+  color: white;
+  background-color: var(--graphite);
+  min-width: fit-content;
+  max-width: 90%;
+  margin: 0;
+  padding: 2.5rem;
+  margin: 10rem;
+}
+
+.discount-code {
+  font-weight: 700;
+}
+
+/* Footer */
 
 footer {
   background-color: var(--nitro-pink);
@@ -34,19 +95,4 @@ footer {
 .icon {
   min-width: 3.13rem;
   max-width: 7.5rem;
-}
-
-.discount-text {
-  text-align: center;
-  font-size: 2.81;
-  font-weight: 400;
-  color: white;
-  background-color: var(--graphite);
-  min-width: fit-content;
-  max-width: 90%;
-  margin: 0;
-}
-
-.discount-code {
-  font-weight: 700;
 }

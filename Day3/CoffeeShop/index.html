@@ -15,54 +15,63 @@
   <body>
     <!-- Navigation Menu -->
 
-     <header>
+    <header>
       <nav class="main-nav">
         <img class="main-logo" src="/CoffeeShop/Assets/Logos/coffee-beans-logo-and-footer.svg" alt="" />
 
-        <h1 class="title"><a href="#">nitro</a></h2>
+        <h1 class="title"><a href="#">nitro</a></h1>
 
         <ul class="nav-links">
           <li><a href="#about">ABOUT</a></li>
           <li><a href="./Pages/menu.html">MENU</a></li>
-          <li ><a class="shop" href="#shop">SHOP NOW</a></li>
+          <li><a class="shop" href="#shop">SHOP NOW</a></li>
         </ul>
       </nav>
-       </header>
+    </header>
 
     <!-- Hero -->
     <section class="hero">
-      <h1>Nitro Coffee</h1>
-      <p>
-        Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.
-      </p>
-      <button>SHOP NOW</button>
-      <img class="hero-img" src="/CoffeeShop/Assets/Images/coffeebeans-hero.png" alt="coffee bag" />
+      <div class="hero-text">
+        <h1>Nitro Coffee</h1>
+        <p>
+          Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.
+        </p>
+        <a href="#shop"><button class="btn-shop">SHOP NOW</button></a>
+      </div>
+      <div class="hero-image">
+        <img class="hero-img" src="/CoffeeShop/Assets/Images/coffeebeans-hero.png" alt="coffee bag" />
+      </div>
     </section>
 
     <!-- Products -->
-
-    <section class="products">
-      <h2>Our Products</h2>
-
-      <div class="coffee-beans">
-        <img class="product-img" src="/CoffeeShop/Assets/Images/coffeebeans.png" alt="coffee beans" />
-        <h3>Coffee Beans</h3>
-        <p class="price">$18.99</p>
+    <section class="products" id="shop">
+      <div class="product-title">
+        <h2>Our Products</h2>
       </div>
 
-      <div class="cold-brew">
-        <img class="product-img" src="/CoffeeShop/Assets/Images/coldbrew.png" alt="cold brew" />
-        <h3>Cold Brew</h3>
-        <p class="price">$4.99</p>
-      </div>
+      <section class="product-cards">
+        <div class="coffee-beans">
+          <img class="product-img" src="/CoffeeShop/Assets/Images/coffeebeans.png" alt="coffee beans" />
+          <h3>Coffee Beans</h3>
+          <p class="price">$18.99</p>
+        </div>
 
-      <div class="in-house-brew">
-        <img class="product-img" src="/CoffeeShop/Assets/Images/inhousebrew.png" alt="in-house-brew" />
-        <h3>In-house Brew</h3>
-        <p class="price">$2.99</p>
-      </div>
+        <div class="cold-brew">
+          <img class="product-img" src="/CoffeeShop/Assets/Images/coldbrew.png" alt="cold brew" />
+          <h3>Cold Brew</h3>
+          <p class="price">$4.99</p>
+        </div>
 
-      <button>VIEW ALL</button>
+        <div class="in-house-brew">
+          <img class="product-img" src="/CoffeeShop/Assets/Images/inhousebrew.png" alt="in-house-brew" />
+          <h3>In-house Brew</h3>
+          <p class="price">$2.99</p>
+        </div>
+      </section>
+
+      <div class="btn-view">
+        <button>VIEW ALL</button>
+      </div>
     </section>
 
     <!-- Discount Section -->
