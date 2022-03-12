@@ -18,7 +18,7 @@ h1,
 h2 {
   font-size: 3.75rem;
   font-family: 'Open Sans';
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -34,43 +34,53 @@ p {
   margin: 0;
 }
 
-button {
-  min-width: 11.25rem;
-  max-width: 80%;
-  padding: 1.25rem;
-  margin: 1.25rem;
-  font-size: 1.3125rem;
-  background-color: var(--nitro-blue);
-  color: white;
-  border: none;
+.button-view {
+  text-align: center;
+  padding: 0 35%;
 }
 
-.main-logo {
+.button {
+  min-width: 25%;
+  max-width: 50%;
+  padding: 1rem 2.25rem;
+  margin: 3rem 0;
+  font-size: 1.31rem;
+  background-color: var(--nitro-blue);
+  font-weight: bold;
+  color: white;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation-main__logo {
   min-width: 3.125rem;
   max-width: 7.5rem;
   margin-left: 1.25rem;
 }
 
-.main-nav {
+.navigation-main {
   background-color: var(--nitro-pink);
   display: flex;
   align-items: center;
   height: 7rem;
 }
 
-
-.nav-links, .nav-links a, .nav-links li {
+.navigation-main__links,
+.navigation-main__links a,
+.navigation-main__links li {
   font-size: 1.31rem;
   font-weight: 400;
   list-style-type: none;
   text-decoration: none;
   display: inline-block;
   color: var(--black);
-  margin: 1.25rem .75rem;
+  margin: 1.25rem 0.75rem;
   padding: 0;
 }
 
-.nav-links {
+.navigation-main__links {
   margin-bottom: 0;
 }
 
@@ -78,11 +88,13 @@ li .shop {
   color: var(--nitro-blue);
 }
 
-.title a {
+.navigation-main__title a {
   text-decoration: none;
   color: var(--black);
 }
 
 .price {
   color: var(--nitro-blue);
+  font-weight: 400;
+  margin: 0.5rem 0;
 }

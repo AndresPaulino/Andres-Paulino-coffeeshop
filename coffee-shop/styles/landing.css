@@ -11,7 +11,7 @@ section.hero {
   justify-content: space-between;
 }
 
-.hero-text {
+.hero__text {
   width: 30%;
 }
 
@@ -19,21 +19,14 @@ section.hero {
   margin-left: 0;
 }
 
-.product-img {
-  min-height: 15rem;
-  max-height: 34.37rem;
-}
-
 /* Product Cards */
 
-.products {
+.product {
   background-color: var(--light-gray);
   margin: 0;
 }
 
-
-
-.product-title {
+.product__title {
   text-align: center;
   padding: 2.5rem;
 }
@@ -45,7 +38,7 @@ section.hero {
   text-align: center;
 }
 
-.coffee-beans, .cold-brew, .in-house-brew  {
+.product-cards__item {
   min-width: 20.625rem;
   max-width: 15.625rem;
   min-height: 27.5rem;
@@ -53,11 +46,16 @@ section.hero {
   padding: 1.25rem;
   margin: 1.25rem;
   border-radius: 10px;
-  box-shadow: 0 5px 9px -1px rgba(0,0,0,0.25);
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
   background-color: white;
 }
 
-.card-title {
+.product-cards__image {
+  min-height: 15rem;
+  max-height: 34.37rem;
+}
+
+.product-cards__title {
   margin-top: 3rem;
   font-size: 2rem;
 }
@@ -66,15 +64,9 @@ p.price {
   font-size: 2.25rem;
 }
 
-.btn-view {
-  text-align: center;
-  margin: 2.5rem 0;
-  padding-bottom: 2rem;
-}
-
 /* Discount */
 
-.discount-text {
+.discount__text {
   text-align: center;
   font-size: 2.81rem;
   font-weight: 400;
@@ -87,7 +79,7 @@ p.price {
   margin: 10rem;
 }
 
-.discount-code {
+.discount__code {
   font-weight: 700;
 }
 
@@ -101,12 +93,12 @@ footer {
   justify-content: center;
 }
 
-.address, .hours, .social {
+.footer__section {
   padding: 2.5rem;
   margin-left: 4rem;
 }
 
-.icon {
+.footer__icon {
   min-width: 3.13rem;
   max-width: 7.5rem;
 }
