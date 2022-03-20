@@ -1,0 +1,263 @@
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #393939;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-size: 3.75rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2.0625rem;
+  font-weight: 300;
+  margin: 0 0 1rem 0;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Buttons */
+.button-view {
+  text-align: center;
+  padding: 0 35%;
+}
+
+.button {
+  min-width: 25%;
+  max-width: 50%;
+  padding: 1rem 2.25rem;
+  margin: 3rem 0;
+  font-size: 1.31rem;
+  background-color: #5bacc3;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Nav bar */
+.navigation-main {
+  background-color: #fff0ed;
+  display: flex;
+  align-items: center;
+  height: 7rem;
+}
+.navigation-main__logo {
+  min-width: 3.125rem;
+  max-width: 7.5rem;
+  margin-left: 1.25rem;
+}
+.navigation-main__links {
+  margin-bottom: 0;
+}
+.navigation-main__title a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navigation-main__links,
+.navigation-main__links a,
+.navigation-main__links li {
+  font-size: 1.31rem;
+  font-weight: 400;
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+  margin: 1.25rem 0.75rem;
+  padding: 0;
+}
+
+.shop {
+  color: #5bacc3;
+}
+
+/* Prices */
+.price {
+  color: #5bacc3;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+
+/* Landing Page Hero */
+.hero {
+  background-color: #fff0ed;
+  display: flex;
+  padding: 1.25rem 10%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__text {
+  width: 30%;
+}
+
+.btn-shop {
+  margin-left: 0;
+}
+
+/* Product Cards */
+.product {
+  background-color: #f7f7f7;
+  margin: 0;
+}
+.product__title {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.product-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  min-height: 15rem;
+  max-height: 34.37rem;
+}
+.product-cards__item {
+  min-width: 20.625rem;
+  max-width: 15.625rem;
+  min-height: 27.5rem;
+  max-height: 28.75rem;
+  padding: 1.25rem;
+  margin: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.product-cards__image {
+  min-height: 15rem;
+  max-height: 34.37rem;
+}
+.product-cards__title {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.price {
+  font-size: 2.25rem;
+}
+
+/* Discount */
+.discount__text {
+  text-align: center;
+  font-size: 2.81rem;
+  font-weight: 400;
+  color: white;
+  background-color: #393939;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  max-width: 90%;
+  margin: 0;
+  padding: 2.5rem;
+  margin: 10rem;
+}
+.discount__text__code {
+  font-weight: 700;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #fff0ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__section {
+  padding: 2.5rem;
+  margin-left: 4rem;
+}
+.footer__icon {
+  min-width: 3.13rem;
+  max-width: 7.5rem;
+}
+
+/* Menu Page Hero */
+.menu-hero {
+  background-image: url("../assets/images/coffee-circle.jpg");
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 35.93rem;
+  max-height: 37.5rem;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-hero__title {
+  min-width: 17.5rem;
+  max-width: 18.75rem;
+  min-height: 11.25rem;
+  max-height: 12.5rem;
+  background-color: #393939;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 0;
+}
+
+/* Navigation Menu */
+.navigation-menu {
+  background-color: #393939;
+  text-align: center;
+  list-style-type: none;
+  padding: 1.25rem 0;
+}
+.navigation-menu__links {
+  margin: 0;
+}
+.navigation-menu__links a {
+  color: #fff;
+  display: inline-block;
+  border-left: 4px solid #5bacc3;
+  text-decoration: none;
+  padding: 5px 1.25rem;
+}
+.navigation-menu__links li {
+  display: inline;
+  padding: 1.25rem 0;
+  margin: 1.25rem 0;
+}
+
+/* Menu Items */
+.menu {
+  text-align: center;
+}
+.menu__section {
+  background-color: #fff0ed;
+  padding: 1.25rem;
+}
+.menu__section--white {
+  padding: 1.25rem;
+  background-color: #fff;
+}
+.menu__title {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.menu__description {
+  padding: 0 20rem;
+  font-style: italic;
+  font-weight: 700;
+  margin: 0;
+}
+.menu__item {
+  font-weight: 400;
+  margin-top: 2rem;
+}/*# sourceMappingURL=main.css.map */

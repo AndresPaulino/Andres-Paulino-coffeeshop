@@ -1,16 +1,9 @@
-:root {
-  --nitro-blue: #5bacc3;
-  --nitro-pink: #fff0ed;
-  --graphite: #393939;
-  --light-gray: #f7f7f7;
-  --white: #fff;
-  --black: #000;
-}
+@use './colors';
 
 body {
   font-family: 'Open Sans';
   font-weight: 400;
-  color: var(--graphite);
+  color: colors.$graphite;
   margin: 0;
 }
 
@@ -47,9 +40,9 @@ p {
   padding: 1rem 2.25rem;
   margin: 3rem 0;
   font-size: 1.31rem;
-  background-color: var(--nitro-blue);
+  background-color: colors.$nitro-blue;
   font-weight: bold;
-  color: white;
+  color: colors.$white;
   border: none;
   display: inline-block;
   text-decoration: none;
@@ -58,17 +51,26 @@ p {
 
 /* Nav bar */
 
-.navigation-main__logo {
-  min-width: 3.125rem;
-  max-width: 7.5rem;
-  margin-left: 1.25rem;
-}
-
 .navigation-main {
-  background-color: var(--nitro-pink);
+  background-color: colors.$nitro-pink;
   display: flex;
   align-items: center;
   height: 7rem;
+
+  &__logo {
+    min-width: 3.125rem;
+    max-width: 7.5rem;
+    margin-left: 1.25rem;
+  }
+
+  &__links {
+    margin-bottom: 0;
+  }
+
+  &__title a {
+    text-decoration: none;
+    color: colors.$black;
+  }
 }
 
 .navigation-main__links,
@@ -79,30 +81,19 @@ p {
   list-style-type: none;
   text-decoration: none;
   display: inline-block;
-  color: var(--black);
+  color: colors.$black;
   margin: 1.25rem 0.75rem;
   padding: 0;
 }
 
-.navigation-main__links {
-  margin-bottom: 0;
-}
-
-li .shop {
-  color: var(--nitro-blue);
-}
-
-.navigation-main__title a {
-  text-decoration: none;
-  color: var(--black);
+.shop {
+  color: colors.$nitro-blue;
 }
 
 /* Prices */
 
 .price {
-  color: var(--nitro-blue);
+  color: colors.$nitro-blue;
   font-weight: 400;
   margin: 0.5rem 0;
 }
-
-
