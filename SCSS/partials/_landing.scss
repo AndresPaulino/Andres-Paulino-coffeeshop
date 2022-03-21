@@ -1,4 +1,23 @@
 @use './colors';
+// Rotation
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flash {
+  0% {
+    background: colors.$graphite;
+  }
+  100% {
+    background: colors.$nitro-blue;
+  }
+}
 
 /* Landing Page Hero */
 
@@ -26,8 +45,9 @@
   position: relative;
   justify-content: center;
   margin: 2rem 0;
+  cursor: pointer;
 
-  &--view {
+  &--shop {
     @extend .button;
     justify-content: flex-start;
     margin: 1rem 0;
@@ -56,6 +76,12 @@
       border: 2px solid colors.$black;
       top: -5px;
       left: -5px;
+
+      &:active {
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
     }
   }
 
@@ -63,6 +89,7 @@
     text-decoration: none;
     color: colors.$white;
     font-size: 1.3125rem;
+    z-index: 1;
   }
 }
 
@@ -194,6 +221,15 @@
       top: -20px;
       left: -20px;
     }
+
+    &__image {
+      z-index: 2;
+
+      &:hover {
+        z-index: 1;
+        animation: rotating 2s linear infinite;
+      }
+    }
   }
 }
 
@@ -213,6 +249,13 @@
     min-width: fit-content;
     padding: 2rem;
     margin: 5rem;
+
+    &-flash {
+      animation-name: flash;
+      animation-duration: 2.5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
   }
 
   &__code {

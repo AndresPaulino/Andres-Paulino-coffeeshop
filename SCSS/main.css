@@ -86,6 +86,39 @@ a.shop {
   margin: 0.5rem 0;
 }
 
+@-webkit-keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes flash {
+  0% {
+    background: #393939;
+  }
+  100% {
+    background: #5bacc3;
+  }
+}
+@keyframes flash {
+  0% {
+    background: #393939;
+  }
+  100% {
+    background: #5bacc3;
+  }
+}
 /* Landing Page Hero */
 .hero {
   background-color: #fff0ed;
@@ -103,13 +136,14 @@ a.shop {
 }
 
 /* Buttons */
-.button, .button--learn, .button--view {
+.button, .button--learn, .button--shop {
   display: flex;
   position: relative;
   justify-content: center;
   margin: 2rem 0;
+  cursor: pointer;
 }
-.button--view {
+.button--shop {
   justify-content: flex-start;
   margin: 1rem 0;
 }
@@ -135,10 +169,16 @@ a.shop {
   top: -5px;
   left: -5px;
 }
+.button__show__border:active {
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
 .button__text {
   text-decoration: none;
   color: #fff;
   font-size: 1.3125rem;
+  z-index: 1;
 }
 
 /* Product Cards */
@@ -256,6 +296,14 @@ a.shop {
   top: -20px;
   left: -20px;
 }
+.different__picture__image {
+  z-index: 2;
+}
+.different__picture__image:hover {
+  z-index: 1;
+  -webkit-animation: rotating 2s linear infinite;
+          animation: rotating 2s linear infinite;
+}
 
 /* Discount */
 .discount {
@@ -274,6 +322,16 @@ a.shop {
   min-width: fit-content;
   padding: 2rem;
   margin: 5rem;
+}
+.discount__text-flash {
+  -webkit-animation-name: flash;
+          animation-name: flash;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 .discount__code {
   font-weight: bold;
