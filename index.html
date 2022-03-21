@@ -16,14 +16,16 @@
 
     <header>
       <nav class="navigation-main">
-        <a href="#"
-          ><img
-            class="navigation-main__logo"
-            src="./assets/logos/coffee-beans-logo-and-footer.svg"
-            alt="coffee beans logo"
-        /></a>
+        <div class="navigation-main__title">
+          <a href="#"
+            ><img
+              class="navigation-main__logo"
+              src="./assets/logos/coffee-beans-logo-and-footer.svg"
+              alt="coffee beans logo"
+          /></a>
 
-        <h1 class="navigation-main__title"><a href="#">nitro</a></h1>
+          <h1><a href="#">nitro</a></h1>
+        </div>
 
         <ul class="navigation-main__links">
           <li><a href="#about">ABOUT</a></li>
@@ -38,12 +40,15 @@
     <section class="hero">
       <div class="hero__text">
         <h1>Nitro Coffee</h1>
-        <p>
+        <p class="hero__description">
           Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.
         </p>
 
-        <div class="button-shop">
-          <a class="button" href="./pages/menu.html">SHOP NOW</a>
+        <div class="button button--view">
+          <div class="button__show">
+            <a class="button__text" href="./pages/menu.html">SHOP NOW</a>
+            <div class="button__show__border"></div>
+          </div>
         </div>
       </div>
       <div>
@@ -60,26 +65,74 @@
 
       <section class="product-cards">
         <div class="product-cards__item">
-          <img class="product__image" src="./assets/images/coffeebeans.png" alt="bag of coffee beans" />
-          <h3 class="product-cards__title">Coffee Beans</h3>
-          <p class="price">$18.99</p>
+          <img class="product-cards__image" src="./assets/images/coffeebeans.png" alt="bag of coffee beans" />
+          <div class="product-cards__info">
+            <div class="product-cards__title">
+              <h3 class="product-cards__heading">Coffee Beans</h3>
+              <p class="product-cards__amount">Pack of 3</p>
+            </div>
+            <div class="price-container">
+              <p class="price">$19</p>
+            </div>
+          </div>
         </div>
 
         <div class="product-cards__item">
-          <img class="product__cards__image" src="./assets/images/coldbrew.png" alt=" can of cold brew coffee" />
-          <h3 class="product-cards__title">Cold Brew</h3>
-          <p class="price">$4.99</p>
+          <img class="product-cards__image" src="./assets/images/coldbrew.png" alt=" can of cold brew coffee" />
+          <div class="product-cards__info">
+            <div class="product-cards__title">
+              <h3 class="product-cards__heading">Cold Brew</h3>
+              <p class="product-cards__amount">1 can</p>
+            </div>
+            <div class="price-container">
+              <p class="price">$5</p>
+            </div>
+          </div>
         </div>
 
         <div class="product-cards__item">
           <img class="product-cards__image" src="./assets/images/inhousebrew.png" alt="cup of in-house-brew" />
-          <h3 class="product-cards__title">In-house Brew</h3>
-          <p class="price">$2.99</p>
+          <div class="product-cards__info">
+            <div class="product-cards__title">
+              <h3 class="product-cards__heading">In-house Brew</h3>
+              <p class="product-cards__amount">1 cup</p>
+            </div>
+            <div class="price-container">
+              <p class="price">$3</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <div class="button-view">
-        <a class="button" href="./pages/menu.html">VIEW ALL</a>
+      <div class="button">
+        <div class="button__show">
+          <a class="button__text" href="./pages/menu.html">VIEW ALL</a>
+          <div class="button__show__border"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="different">
+      <div class="different__info">
+        <h2 class="different__title">We're Different</h2>
+        <p class="different__text">
+          We grow and roast our own beans. Every bean, every cup, every step of the way, we strive for excellence
+        </p>
+        <div class="different__logos">
+          <img src="./assets/logos/planting.svg" alt="" class="different__logo" />
+          <img src="./assets/logos/coffee-beans.svg" alt="" class="different__logo" />
+          <img src="./assets/logos/coffee-cup.svg" alt="" class="different__logo" />
+        </div>
+        <div class="button button--learn">
+          <div class="button__show">
+            <a class="button__text" href="./pages/menu.html">LEARN MORE</a>
+            <div class="button__show__border"></div>
+          </div>
+        </div>
+      </div>
+      <div class="different__picture">
+        <img src="./assets/images/tiltedcan.png" alt="" class="different__image" />
+        <div class="different__picture__border"></div>
       </div>
     </section>
 

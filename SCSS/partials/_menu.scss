@@ -25,6 +25,16 @@
     align-items: center;
     color: colors.$white;
     margin-top: 0;
+    position: relative;
+
+    &__border {
+      position: absolute;
+      border: 5px solid colors.$nitro-blue;
+      width: 100%;
+      height: 100%;
+      top: -15px;
+      left: -15px;
+    }
   }
 }
 
@@ -45,11 +55,10 @@
       border-left: 4px solid colors.$nitro-blue;
       text-decoration: none;
       padding: 5px 1.25rem;
+      font-size: 1.25rem;
     }
     & li {
       display: inline;
-      padding: 1.25rem 0;
-      margin: 1.25rem 0;
     }
   }
 }

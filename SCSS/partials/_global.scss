@@ -1,5 +1,11 @@
 @use './colors';
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans';
   font-weight: 400;
@@ -27,26 +33,9 @@ p {
   margin: 0;
 }
 
-/* Buttons */
-
-.button-view {
-  text-align: center;
-  padding: 0 35%;
-}
-
-.button {
-  min-width: 25%;
-  max-width: 50%;
-  padding: 1rem 2.25rem;
-  margin: 3rem 0;
-  font-size: 1.31rem;
-  background-color: colors.$nitro-blue;
-  font-weight: bold;
-  color: colors.$white;
-  border: none;
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
+span {
+  margin: 0;
+  padding: 0;
 }
 
 /* Nav bar */
@@ -55,7 +44,14 @@ p {
   background-color: colors.$nitro-pink;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 7rem;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__logo {
     min-width: 3.125rem;
@@ -77,7 +73,7 @@ p {
 .navigation-main__links a,
 .navigation-main__links li {
   font-size: 1.31rem;
-  font-weight: 400;
+  font-weight: bold;
   list-style-type: none;
   text-decoration: none;
   display: inline-block;
@@ -86,7 +82,7 @@ p {
   padding: 0;
 }
 
-.shop {
+a.shop {
   color: colors.$nitro-blue;
 }
 

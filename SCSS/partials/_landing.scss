@@ -11,19 +11,66 @@
   justify-content: space-between;
 
   &__text {
-    width: 30%;
+    width: 35%;
+  }
+
+  &__description {
+    margin-bottom: 2rem;
   }
 }
 
-.btn-shop {
-  margin-left: 0;
+/* Buttons */
+
+.button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 2rem 0;
+
+  &--view {
+    @extend .button;
+    justify-content: flex-start;
+    margin: 1rem 0;
+  }
+
+  &--learn {
+    @extend .button;
+    justify-content: flex-start;
+    margin: 1rem 0;
+    width: 20rem;
+  }
+
+  &__show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: colors.$nitro-blue;
+    height: 3rem;
+    width: 9rem;
+    position: relative;
+
+    &__border {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border: 2px solid colors.$black;
+      top: -5px;
+      left: -5px;
+    }
+  }
+
+  &__text {
+    text-decoration: none;
+    color: colors.$white;
+    font-size: 1.3125rem;
+  }
 }
 
 /* Product Cards */
 
 .product {
   background-color: colors.$light-gray;
-  margin: 0;
+  padding: 2rem 0;
 
   &__title {
     text-align: center;
@@ -44,7 +91,6 @@
     max-width: 15.625rem;
     min-height: 27.5rem;
     max-height: 28.75rem;
-    padding: 1.25rem;
     margin: 1.25rem;
     border-radius: 10px;
     box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
@@ -54,48 +100,136 @@
   &__image {
     min-height: 15rem;
     max-height: 34.37rem;
+    margin: 1.5rem;
   }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 9.375rem;
+    background-color: colors.$nitro-pink;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
   &__title {
-    margin-top: 3rem;
     font-size: 2rem;
+  }
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__amount {
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+    text-align: left;
+    color: colors.$gray;
   }
 }
 
-.price {
-  font-size: 2.25rem;
+.price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .price {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+  }
+}
+
+/* Different Section */
+
+.different {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 5rem;
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+  &__info {
+    width: 50%;
+  }
+
+  &__text {
+    width: 80%;
+  }
+  &__logos {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0;
+  }
+
+  &__logo {
+    width: 50px;
+    height: 120px;
+  }
+
+  &__picture {
+    width: 23rem;
+    max-width: 80%;
+    padding: 0;
+    height: 23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/images/coldbrewbackground.png');
+    background-position: center;
+    background-size: contain;
+    position: relative;
+
+    &__border {
+      position: absolute;
+      border: 5px solid colors.$nitro-blue;
+      width: 100%;
+      height: 100%;
+      top: -20px;
+      left: -20px;
+    }
+  }
 }
 
 /* Discount */
 
-.discount__text {
-  text-align: center;
-  font-size: 2.81rem;
-  font-weight: 400;
-  color: white;
-  background-color: colors.$graphite;
-  min-width: fit-content;
-  max-width: 90%;
-  margin: 0;
-  padding: 2.5rem;
-  margin: 10rem;
+.discount {
+  display: flex;
+  justify-self: center;
+  margin: 5rem 0;
+
+  &__text {
+    text-align: center;
+    font-size: 2.81rem;
+    font-weight: 400;
+    color: white;
+    background-color: colors.$graphite;
+    min-width: fit-content;
+    padding: 2rem;
+    margin: 5rem;
+  }
 
   &__code {
-    font-weight: 700;
+    font-weight: bold;
   }
 }
 
 /* Footer */
 
 .footer {
-  width: 100%;
   background-color: colors.$nitro-pink;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   &__section {
-    padding: 2.5rem;
-    margin-left: 4rem;
+    margin: 3rem 5rem;
   }
 
   &__icon {
